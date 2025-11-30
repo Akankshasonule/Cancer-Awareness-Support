@@ -1,43 +1,51 @@
-import countryFacts from "../api/countryData.json";
+import cancerData from "../api/cancerData.json";
 
 export const About = () => {
-    return <section className="section-about container">
+  return (
+    <section className="section-about container">
+      <h2 className="container-title">
+       Quick guide to symptoms, prevention, and treatments
+        <br />
+       Cancer Facts You Must Know
+      </h2>
 
-        <h2 className="container-title">
-            Here are the Interesting Facts
-            <br />
-            we’re proud of
-        </h2>
+      <div className="gradient-cards">
 
-        <div className="gradient-cards">
-{ countryFacts.map((country) => {
-    const {id, countryName ,capital,population,interestingFact} = country
-    return(
-        <div className="card" key={id}>
-        <div className="container-card bg-blue-box">
-            <p className="card-tttle">{countryName}</p>
-            <p>
-                <span className="card-description">Capital:</span>
-                {capital}
-            </p>
-            <p>
-                <span className="card-description">Population:</span>
-                {population}
-            </p>
-            <p>
-                <span className="card-description">Interesting Fact:</span>
-                {interestingFact}
-            </p>
+        {cancerData.cancerTypes.map((cancer) => {
+          const { id, name, commonIn, symptoms, prevention, treatments, interestingFact, image } = cancer;
 
-        </div>
+          return (
+            <div className="card" key={id}>
+              <div className="container-card bg-blue-box">
 
-    </div>
-    )
-})}
+                {/* 🌟 IMAGE ADDED HERE */}
+                <img 
+                  src={image} 
+                  alt={name} 
+                  className="card-image"
+                  style={{
+                    width: "100%",
+                    height: "180px",
+                    objectFit: "cover",
+                    borderRadius: "10px",
+                    marginBottom: "10px"
+                  }}
+                />
 
-          
+                <p className="card-title">{name}</p>
 
-        </div>
+                <p><span className="card-description">Common In: </span>{commonIn}</p>
+                <p><span className="card-description">Symptoms: </span>{symptoms.join(", ")}</p>
+                <p><span className="card-description">Prevention: </span>{prevention.join(", ")}</p>
+                <p><span className="card-description">Treatments: </span>{treatments.join(", ")}</p>
+                <p><span className="card-description">Fact: </span>{interestingFact}</p>
 
+              </div>
+            </div>
+          );
+        })}
+
+      </div>
     </section>
+  );
 };

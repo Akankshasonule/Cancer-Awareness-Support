@@ -16,7 +16,7 @@ export const Headers = () => {
         <div className="grid navbar-grid">
           <div className="Logo">
             <NavLink to="/">
-              <h1>WorldTour</h1>
+              <h3> CANCER HELPLINE: 1800-22-1951 </h3>
             </NavLink>
           </div>
 

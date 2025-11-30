@@ -1,0 +1,61 @@
+{
+  "globalStats": {
+    "annualCases": "20M+ cases yearly",
+    "annualDeaths": "10M+ deaths yearly",
+    "mostCommonCancer": "Breast Cancer",
+    "interestingFact": "Many cancers are preventable.",
+    "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=800&q=80"
+  },
+  "cancerTypes": [
+    {
+      "id": 1,
+      "name": "Breast Cancer",
+      "commonIn": "Mostly women",
+      "symptoms": ["Lump", "Shape change"],
+      "prevention": ["Checkups", "Healthy diet"],
+      "treatments": ["Surgery", "Chemo"],
+      "interestingFact": "Most common cancer.",
+      "image": "https://images.unsplash.com/photo-1604881991720-f91add269bed?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 2,
+      "name": "Lung Cancer",
+      "commonIn": "Smokers",
+      "symptoms": ["Long cough", "Chest pain"],
+      "prevention": ["Avoid smoking"],
+      "treatments": ["Targeted therapy", "Surgery"],
+      "interestingFact": "Highest cancer deaths globally.",
+      "image": "/public/images/lung.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Skin Cancer",
+      "commonIn": "High sun exposure",
+      "symptoms": ["New growth", "Changing moles"],
+      "prevention": ["Use sunscreen"],
+      "treatments": ["Surgery"],
+      "interestingFact": "Highly preventable cancer.",
+      "image": "/public/images/skin.png"
+    },
+    {
+      "id": 4,
+      "name": "Prostate Cancer",
+      "commonIn": "Men 50+",
+      "symptoms": ["Urination issues"],
+      "prevention": ["Healthy diet"],
+      "treatments": ["Hormone therapy"],
+      "interestingFact": "Common in older men.",
+      "image": "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 5,
+      "name": "Cervical Cancer",
+      "commonIn": "Women",
+      "symptoms": ["Bleeding"],
+      "prevention": ["HPV vaccine"],
+      "treatments": ["Surgery"],
+      "interestingFact": "Caused by HPV.",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+    }
+  ]
+}

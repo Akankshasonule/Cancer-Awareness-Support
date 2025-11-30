@@ -8,7 +8,15 @@
   font-style: normal;
 }
 :root {
-  --bg-color: #202020;
+  --bg-color: #f9f9f9; /* Light background */
+  --text-color: #222;   /* Dark text */
+  --subtext-color: #555; /* For descriptions */
+  --link-color: #1e90ff; /* Links */
+  --card-bg-gradient: linear-gradient(71deg, #ffffff, #f0f0f0, #ffffff);
+  --card-border-gradient: linear-gradient(71deg, #f0f0f0, #ccc, #f0f0f0);
+  --button-bg: #fff;
+  --button-border: #ccc;
+  --button-text: #222;
 }
 
 html {
@@ -17,7 +25,8 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 h1,
@@ -25,7 +34,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: #fff;
+   color: var(--text-color);
 }
 
 p,
@@ -35,7 +44,7 @@ button {
   font-size: 1.7rem;
   letter-spacing: 0.1rem;
   line-height: 1.6;
-  color: #fff;
+   color: var(--text-color);
 }
 
 li {
@@ -43,7 +52,7 @@ li {
 }
 
 a {
-  color: #000;
+  color: var(--link-color);
 
   &:hover {
     color: #2e86c1;
