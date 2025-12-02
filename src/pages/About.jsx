@@ -18,7 +18,6 @@ export const About = () => {
             <div className="card" key={id}>
               <div className="container-card bg-blue-box">
 
-                {/* 🌟 IMAGE ADDED HERE */}
                 <img 
                   src={image} 
                   alt={name} 

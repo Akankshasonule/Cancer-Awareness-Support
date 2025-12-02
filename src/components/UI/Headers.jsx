@@ -2,6 +2,7 @@
 import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
+import { color } from "framer-motion";
 
 export const Headers = () => {
   const [show, setShow] = useState(false);
@@ -16,7 +17,7 @@ export const Headers = () => {
         <div className="grid navbar-grid">
           <div className="Logo">
             <NavLink to="/">
-              <h3> CANCER HELPLINE: 1800-22-1951 </h3>
+              <h4 style={{color : "white"}}> CANCER HELPLINE: 1800-22-1951 </h4>
             </NavLink>
           </div>
 

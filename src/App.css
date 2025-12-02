@@ -8,15 +8,7 @@
   font-style: normal;
 }
 :root {
-  --bg-color: #f9f9f9; /* Light background */
-  --text-color: #222;   /* Dark text */
-  --subtext-color: #555; /* For descriptions */
-  --link-color: #1e90ff; /* Links */
-  --card-bg-gradient: linear-gradient(71deg, #ffffff, #f0f0f0, #ffffff);
-  --card-border-gradient: linear-gradient(71deg, #f0f0f0, #ccc, #f0f0f0);
-  --button-bg: #fff;
-  --button-border: #ccc;
-  --button-text: #222;
+  --bg-color: white;
 }
 
 html {
@@ -25,8 +17,7 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: white;
 }
 
 h1,
@@ -34,7 +25,7 @@ h2,
 h3,
 h4,
 h5 {
-   color: var(--text-color);
+  color: #ce5dae;
 }
 
 p,
@@ -44,20 +35,20 @@ button {
   font-size: 1.7rem;
   letter-spacing: 0.1rem;
   line-height: 1.6;
-   color: var(--text-color);
+  color: #ce5dae;
 }
 
 li {
   list-style: none;
 }
 
-a {
-  color: var(--link-color);
+/* a {
+  color: #141012;
 
   &:hover {
-    color: #2e86c1;
+    color: #ce5dae;
   }
-}
+} */
 
 button {
   display: flex;
@@ -73,10 +64,9 @@ button {
   border: none;
   text-transform: unset;
   transition: all 0.3s ease-in-out;
-  background: #202020;
-  color: #fff;
+  background: white;
+ color: #ce5dae;
   border-radius: 1.5rem;
-  /*thisdoesn'twork*/
   border-width: 0.1rem;
   border-style: solid;
   -webkit-border-radius: 1.5rem;
@@ -85,8 +75,6 @@ button {
   -o-border-radius: 1.5rem;
   margin-top: 1.6rem;
 }
-
-/* Layout  */
 
 .container {
   max-width: 120rem;
@@ -114,14 +102,13 @@ button {
 header {
   height: 9rem;
   box-shadow: rgba(255, 255, 255, 0.3) 0px 10px 10px -10px;
-  background-color: #202020;
+  background-color: #ce5dae;
   width: 100%;
 
   & .container {
     height: 10rem;
   }
 }
-
 
 /* styles.css */
 
@@ -135,17 +122,20 @@ header {
 nav ul {
   display: flex;
   justify-content: flex-end;
-  /* background-color: yellow; */
   gap: 3.2rem;
   color: #fff;
 
   & li a {
     color: #fff;
+
+    &:hover {
+     font-size: 80%;
+  }
   }
 }
 
 input::placeholder {
-  color: #fff;
+ color: #ce5dae;
   font-family: "DM Serif Text", serif;
   font-weight: 400;
   font-style: normal;
@@ -153,7 +143,7 @@ input::placeholder {
 }
 
 textarea::placeholder{
-  color: #fff;
+ color: #ce5dae;
   font-family: "DM Serif Text", serif;
   font-weight: 400;
   font-style: normal;
@@ -274,7 +264,7 @@ input[type=date] {
   margin-bottom: 40px;
   margin-top: 40px;
   font-size: 40px;
-  color: #fff;
+ color: #ce5dae;
   font-weight: 600;
   line-height: 60px;
 }
@@ -289,7 +279,7 @@ input[type=date] {
 .container-card {
   position: relative;
   border: 2px solid transparent;
-  background: linear-gradient(71deg, #080509, #1a171c, #080509);
+  /* background: linear-gradient(1deg, white, #eed2e6, white); */
   background-clip: padding-box;
   border-radius: 45px;
   padding: 40px;
@@ -317,7 +307,7 @@ input[type=date] {
 }
 
 .bg-green-box::after {
-  background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
+  background: linear-gradient(71deg, #ebebeb, #3da077, #0d1212);
 }
 
 .bg-white-box::after {
@@ -345,7 +335,7 @@ input[type=date] {
 .card-description {
   font-weight: 600;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.5);
+  color: white;
   font-size: 16px;
   max-width: 470px;
 }
@@ -359,7 +349,7 @@ input[type=date] {
   align-items: center;
 
   & .icon {
-    color: #3a4ed5;
+   color: #ce5dae;
     font-size: 3.6rem;
 
     & .icon:nth-child(2) {
@@ -375,13 +365,13 @@ input[type=date] {
 
   & p {
     font-size: 1.5rem;
-    color: #757575;
+   color: #ce5dae;
   }
 
   & p:first-child {
     font-size: 1.7rem;
     font-weight: bold;
-    color: #fff;
+    color: #ce5dae;
   }
 }
 
@@ -397,21 +387,22 @@ ul {
   padding: 0px;
 }
 .footer-section {
-  background: #151414;
+  background: white; 
+  border-top: 2px solid #ce5dae;
   position: relative;
 }
 
 .copyright-area {
-  background: #202020;
+  background:  #ce5dae;
   padding: 25px 0;
 }
 .copyright-text p {
   margin: 0;
   font-size: 14px;
-  color: #878787;
+  color: white;
 }
 .copyright-text p a {
-  color: #3a4ed5;
+  color: white;
   margin-left: 0.6rem;
 }
 .footer-menu li {
@@ -419,11 +410,11 @@ ul {
   margin-left: 20px;
 }
 .footer-menu li:hover a {
-  color: #3a4ed5;
+  color: black;
 }
 .footer-menu li a {
   font-size: 14px;
-  color: #878787;
+  color: white;
 }
 
 /* --------------- 
